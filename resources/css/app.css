@@ -202,3 +202,9 @@ footer{
 .success{
     color: #26B69F;
 }
+
+.admin-h1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 60px;
+}

@@ -10,11 +10,6 @@ class BookingController extends Controller
 {
     public function index()
     {
-        // $bookedDates = [
-        //     '2023/08/05',
-        //     '2023/08/10'
-        // ];
-
         $bookings = Booking::get();
         return view('index', compact('bookings'));
     }

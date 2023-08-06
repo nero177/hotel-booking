@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,7 @@ Route::get('/bookedDates', [BookingController::class, 'getBookedDates']);
 
 Route::post('/booking', [BookingController::class, 'store'])->name('booking.store');
 Route::delete('/booking/{id}', [BookingController::class, 'delete'])->name('booking.delete');
+
+Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
+
 
