@@ -39,6 +39,13 @@ body{
     padding-bottom: 20px;
 }
 
+.btn-clear{
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
 .logo-font{
     font-family: 'Caravan';
     font-size: 80px;
@@ -49,7 +56,7 @@ body{
 
 .container{
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1700px;
 }
 
 .booking-btn{
@@ -73,11 +80,11 @@ body{
     align-items: center;
     position: relative;
     margin-top: 35px;
-    width: 70%;
+    width: 50%;
 }
 
 .title-with-image h1, .title-with-image h2{
-    font-size: 60px;
+    font-size: 65px;
     font-family: 'CormorantGaramond';
     font-weight: 300;
 }
@@ -89,15 +96,15 @@ body{
 .title-with-image img{
     position: absolute;
     top: 50%;
-    left: 320px;
+    left: 372px;
     transform: translateY(-55%); /* Vertically center the image */
     width: 100%; /* Make the image take the full width of the block */
     height: auto; /* Maintain aspect ratio */
-    max-width: 420px;
+    max-width: 473px;
 }
 
 .inputs-section{
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .inputs-section__inputs{
@@ -164,4 +171,34 @@ footer{
 
 .footer-contacts-item span{
     margin-left: 10px;
+}
+
+.booking-table{
+    width: 100%;
+    font-family: 'AvenirNextCyr-Medium', sans-serif;
+    margin: 80px auto 40px auto;
+    border-spacing: 0 20px;
+}
+
+.booking-table th{
+    color: #9DB1B0;
+    text-align: left;
+    width: 25%;
+}
+
+.booking-table td, .booking-table th{
+    padding: 20px 30px;
+}
+
+.booking-table tbody tr{
+    background-color: #fff;
+    max-width: 1200px;
+}
+
+.table-wrapper{
+    padding: 0 70px;
+}
+
+.success{
+    color: #26B69F;
 }

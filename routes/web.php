@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BookingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [BookingController::class, 'index'])->name('index');
+Route::get('/bookedDates', [BookingController::class, 'getBookedDates']);
+
+Route::post('/booking', [BookingController::class, 'store'])->name('booking.store');
+Route::delete('/booking/{id}', [BookingController::class, 'delete'])->name('booking.delete');
+
